@@ -1,0 +1,93 @@
+.shop {
+  background-color: var(--secondary-color) !important;
+  padding-top: 100px;
+
+  //   --------- Shop Breadcrumb Start ---------
+  .breadcrumb {
+    background-color: var(--background-color);
+    padding: 10px 0;
+    margin-bottom: 0;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left-side {
+        font-family: var(--secondary-font-family) !important;
+        color: var(--secondary-color);
+      }
+      .right-side {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-family: var(--secondary-font-family) !important;
+
+        p {
+          margin-bottom: 0;
+          font-size: 17px;
+          color: var(--secondary-color);
+          span {
+            font-size: 23px;
+            color: var(--red-color);
+          }
+        }
+      }
+    }
+  }
+  //   --------- Shop Breadcrumbs End ---------
+
+  //   --------- Shop Banner Start ---------
+  .shop-banner {
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../../assets/image/cate-kids-img-03.jpg');
+    height: 230px;
+    display: flex;
+    align-items: center;
+
+    .container {
+      width: 70%;
+      .category-slider {
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          display: inline-block;
+          width: 80px;
+        }
+        .cat-slider-info {
+          display: inline-block !important;
+          align-items: center;
+          p {
+            color: var(--primary-color);
+            margin-bottom: 3px;
+            font-size: 1.2rem;
+          }
+          span {
+            color: var(--primary-color);
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+  //  --------- Shop Banner End ---------
+
+  // ---------- Shop Product Start -----------
+  .product {
+    background-color: var(--background-color);
+    padding: 100px 0px;
+    .filter {
+    }
+    .shop-product {
+      padding-top: 20px;
+      .row {
+        .p-content {
+          margin-bottom: 25px !important;
+        }
+      }
+    }
+  }
+  // ---------- Shop Product End -----------
+}

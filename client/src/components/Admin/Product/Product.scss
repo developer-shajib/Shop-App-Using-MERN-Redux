@@ -1,0 +1,100 @@
+/* -------- Create Modal Start -------- */
+.add-product {
+  button {
+    background: rgb(241, 79, 79);
+    border: none;
+    margin-top: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  .form-wrap {
+    display: flex;
+    gap: 25px;
+
+    input {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    .form-left {
+      flex: 1;
+    }
+    .form-right {
+      flex: 1;
+    }
+  }
+}
+/* -------- Create Modal End -------- */
+
+.product-section {
+  padding-top: 130px !important;
+  width: 90%;
+  margin: auto;
+
+  /* -------- Table Title Section Start -------- */
+
+  .t_title {
+    h2 {
+      color: #817e7e;
+      font-style: italic;
+    }
+    button {
+      background-color: #f9ebeb;
+      border: none;
+      color: #817e7e;
+      font-size: 1.2rem;
+      font-style: italic;
+
+      &:hover {
+        text-decoration: underline;
+        background: none;
+      }
+    }
+  }
+
+  .table-wrap {
+    thead {
+      background: rgba(249, 193, 193, 0.361) !important;
+      color: rgba(84, 83, 83, 0.766);
+    }
+    tbody {
+      td {
+        .edit-btn {
+          background-color: rgba(154, 241, 149, 0.749);
+          border: none;
+          color: var(--primary-color);
+        }
+        .delete-btn {
+          background-color: rgba(232, 28, 5, 0.463);
+          border: none;
+        }
+      }
+
+      .status {
+        height: 57px;
+
+        input {
+          width: 45px;
+          height: 25px !important;
+          border: none;
+          margin-right: 7px;
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+        p {
+          margin-bottom: 0px;
+          font-size: 16px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  /* -------- Table Title Section End -------- */
+}

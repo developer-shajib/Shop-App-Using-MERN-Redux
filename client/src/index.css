@@ -1,0 +1,49 @@
+:root {
+  --primary-font-family: 'Roboto Slab';
+  --secondary-font-family: 'Oswald';
+  --roboto-font-family: 'Roboto';
+
+  --primary-color: #ffffff;
+  --background-color: #ffffff;
+  --secondary-color: #0a0e0f;
+  --red-color: #d20002;
+  --dark-white-color: #f7f7f7;
+}
+
+.dark {
+  --background-color: #262424;
+  --secondary-color: #e2dbdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font-family);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .active {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.05rem;
+  transition: 0.5s;
+  border-bottom: 3px solid var(--red-color);
+} */

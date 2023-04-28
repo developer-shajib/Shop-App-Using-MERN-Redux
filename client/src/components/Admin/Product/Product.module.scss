@@ -1,0 +1,15 @@
+.wrapper {
+  border: 10px solid blue;
+}
+
+.wrap {
+  display: flex;
+  width: 70%;
+  background-color: red;
+  .title {
+    color: green;
+  }
+  .desc {
+    color: yellow;
+  }
+}

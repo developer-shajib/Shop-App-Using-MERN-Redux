@@ -1,0 +1,113 @@
+/* -------- Crate Modal Start -------- */
+.add-modal {
+  padding: 0px 10px;
+  padding-top: 20px;
+  input[type='name'] {
+    background: rgba(246, 214, 214, 0.555);
+    // border: none;
+    padding: 10px 20px;
+
+    &:focus {
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+  }
+  label {
+    font-size: 50px;
+    color: green;
+    cursor: pointer;
+  }
+  input[type='file'] {
+    display: none;
+  }
+  button {
+    background: rgba(198, 202, 178, 0.851);
+    color: var(--secondary-color);
+    border: none;
+    padding: 6px 0;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+    transition: 0.3s;
+    &:hover {
+      background: rgba(200, 237, 159, 0.555);
+      color: rgb(197, 195, 195);
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      background: rgba(200, 237, 159, 0.555) !important;
+      box-shadow: none;
+    }
+  }
+}
+/* -------- Crate Modal End -------- */
+
+.brand-section {
+  padding-top: 130px !important;
+  width: 90%;
+  margin: auto;
+
+  /* -------- Table Title Section Start -------- */
+
+  .t-title {
+    h2 {
+      color: #817e7e;
+      font-style: italic;
+    }
+    button {
+      background-color: #f9ebeb;
+      border: none;
+      color: #817e7e;
+      font-size: 1.2rem;
+      font-style: italic;
+
+      &:hover {
+        text-decoration: underline;
+        background: none;
+      }
+    }
+  }
+
+  .table-wrap {
+    thead {
+      background: rgba(249, 193, 193, 0.361) !important;
+      color: rgba(84, 83, 83, 0.766);
+    }
+    tbody {
+      td {
+        .edit-btn {
+          background-color: rgba(154, 241, 149, 0.749);
+          border: none;
+          color: var(--primary-color);
+        }
+        .delete-btn {
+          background-color: rgba(232, 28, 5, 0.463);
+          border: none;
+        }
+      }
+
+      .status {
+        height: 57px;
+
+        input {
+          width: 45px;
+          height: 25px !important;
+          border: none;
+          margin-right: 7px;
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+        p {
+          margin-bottom: 0px;
+          font-size: 16px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  /* -------- Table Title Section End -------- */
+}

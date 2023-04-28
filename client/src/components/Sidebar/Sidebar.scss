@@ -1,0 +1,81 @@
+.sidebar-area {
+  .sidebar-widget {
+    margin-bottom: 20px;
+
+    input[type='search'] {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .widget-title {
+      font-weight: 400;
+      font-size: 17px;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+    }
+    hr {
+      margin: 15px 0px;
+      color: var(--secondary-color);
+    }
+
+    input[type='search'] {
+      border-radius: 4px;
+      padding: 7px 12px;
+      font-weight: 400;
+    }
+    .price-search {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+      p,
+      h5 {
+        color: var(--secondary-color);
+      }
+      input {
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        height: 40px;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      button {
+        border: none;
+        background-color: var(--secondary-color);
+        font-weight: 600;
+        height: 40px;
+        color: var(--background-color);
+      }
+    }
+    .tags-items a {
+      background-color: var(--secondary-color);
+      color: var(--background-color);
+      display: inline-block;
+      padding: 3px 8px;
+      margin: 5px;
+    }
+
+    ul {
+      li {
+        input {
+          box-shadow: none;
+          border: 1px solid var(--red-color);
+          &:checked {
+            background-color: var(--red-color);
+            border: none;
+            box-shadow: none;
+          }
+        }
+
+        label {
+          font-size: 14px;
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}

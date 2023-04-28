@@ -1,0 +1,54 @@
+.toggle {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(207, 207, 207);
+  position: relative;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 4px 15px rgb(142, 142, 142);
+
+  &::before {
+    content: url('../../assets/sun.svg');
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+  }
+  &::after {
+    content: url('../../assets/moon.svg');
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    left: 30px;
+    position: absolute;
+    top: -2px;
+  }
+
+  .left {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    box-shadow: 0px 4px 15px rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+}
+
+.dark {
+  .toggle {
+    background-color: rgb(232, 226, 226);
+    box-shadow: inset 0px 4px 15px rgb(205, 204, 204);
+
+    .left {
+      background-color: rgb(0, 0, 0);
+      left: 34px;
+      box-shadow: 0px 4px 15px rgb(255, 255, 255);
+    }
+  }
+}

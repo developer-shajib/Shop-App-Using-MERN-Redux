@@ -1,0 +1,39 @@
+.subtitle {
+  padding-top: 40px;
+  padding-top: 20px;
+
+  --bs-gutter-x: 0 !important;
+
+  .subtitle-content {
+    h1 {
+      font-weight: 700;
+      position: relative;
+      padding: 20px 0px;
+      color: var(--secondary-color);
+
+      &::before {
+        content: '';
+        width: 100px;
+        height: 2px;
+        background-color: var(--red-color);
+        left: 0;
+        top: 10px;
+        position: absolute;
+      }
+      &::after {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background-color: green;
+        left: 0;
+        top: 0px;
+        position: absolute;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #787676;
+    }
+  }
+}

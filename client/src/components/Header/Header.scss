@@ -1,0 +1,127 @@
+.sticky {
+  // background-color: rgba(0, 0, 0, 0.516);
+  background-color: var(--background-color);
+  padding: 1rem 0;
+  box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+  .menu {
+    ul {
+      li {
+        a {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+  .menu-widget {
+    ul {
+      li {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+header {
+  // background-color: #00000061;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: all ease-in-out 0.6s;
+  // box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+
+  //   ---------------- Icon Part ---------------
+  .icon {
+    height: 2.5rem;
+    border-right: 1px solid #ddd;
+  }
+
+  //   ---------------- Menu Part ---------------
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        transition: 0.5s;
+        border-right: 1px solid #ddd;
+        padding: 0px 15px;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &:hover {
+          box-sizing: border-box;
+
+          a {
+            color: var(--red-color);
+            border-bottom: 3px solid var(--red-color);
+          }
+        }
+        a {
+          color: var(--primary-color);
+          font-size: 1.1rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: -0.05rem;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  //   ---------------- Widget Part ---------------
+  .menu-widget {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      li {
+        cursor: pointer;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        transition: 0.6s;
+        position: relative;
+
+        &:hover {
+          color: var(--red-color);
+        }
+      }
+      .h-cart {
+        &::before {
+          content: '3';
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          line-height: 20px;
+          text-align: center;
+          font-size: 15px;
+          top: -2px;
+          left: 13px;
+          background-color: red;
+          color: var(--primary-color);
+          position: absolute;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
